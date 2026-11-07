@@ -1,0 +1,24 @@
+{
+  "kind": "custom_token",
+  "token": {
+    "contract": "SQUEEKSTR",
+    "name": "SQUEEKSTR",
+    "symbol": "SQKSTR",
+    "decimals": 18,
+    "constructorArgs": [],
+    "totalSupply": "1000000000000000000000000000"
+  },
+  "contracts": [],
+  "pool": {
+    "pairedCurrency": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+    "fee": 12500,
+    "tickSpacing": 60,
+    "initialPrice": "79228162514264337593543950336"
+  },
+  "economics": {
+    "poolBps": 6000,
+    "initialMarketCapWei": "3000000000000000000000",
+    "remainderTo": "0xee2aaa315cf7ed169f93148d30d24af9318dbb66"
+  },
+  "notes": "SQUEEKSTR (SQKSTR) is the token for sqkstr.xyz: a plain fixed-supply OpenZeppelin ERC-20 with 18 decimals. Its parameterless constructor mints 1,000,000,000 SQKSTR (10^27 minor units, INITIAL_SUPPLY) once to msg.sender, the factory. It has no owner, no administrative functions, no mint or burn entry points and no transfer fees, so every launch flow (distributor, pool seed, swaps) moves exactly what it says and the supply can never grow. The launch deploys no application contracts. The pool pairs with IMD at the launch policy's 1.25% fee; initialPrice is provenance only, the deployer derives the opening price from economics.initialMarketCapWei and totalSupply."
+}
